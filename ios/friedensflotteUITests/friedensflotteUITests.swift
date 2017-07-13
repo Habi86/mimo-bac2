@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import SnapshotHelper
 
 class friedensflotteUITests: XCTestCase {
         
@@ -39,13 +38,10 @@ class friedensflotteUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
       
       
-      
-    
-      
-      
-      
+      XCUIApplication().otherElements[" E-Mail-Adresse E-Mail-Adresse   Passwort Passwort      ANMELDEN Passwort vergessen? Noch kein Profil? Jetzt registrieren?"].children(matching: .other).element(boundBy: 0).children(matching: .image).element.tap()
       snapshot("01LoginScreen")
 
+      
     }
     
 }

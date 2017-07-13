@@ -13,9 +13,9 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* friedensflotteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* friedensflotteTests.m */; };
-		0745FA231F155472004F6A2E /* friedensflotteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745FA221F155472004F6A2E /* friedensflotteUITests.swift */; };
-		0745FA4C1F1557E3004F6A2E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745FA4B1F1557E3004F6A2E /* SnapshotHelper.swift */; };
 		078D20671F003ECF006B94F0 /* libGTMSessionFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 078D20661F003ECF006B94F0 /* libGTMSessionFetcher.a */; };
+		079E32021F15686900DFA403 /* friedensflotteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079E32011F15686900DFA403 /* friedensflotteUITests.swift */; };
+		079E320A1F156A0700DFA403 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079E32091F156A0700DFA403 /* SnapshotHelper.swift */; };
 		085C02C8C3A4495E97AE3B99 /* SanFranciscoThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1C708FB44344FE28C925A9A /* SanFranciscoThin.ttf */; };
 		0B61F4453EA847348EA16CD4 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3F602DE0EF4C3DB396ACFF /* MaterialCommunityIcons.ttf */; };
 		10BB449575FE465FA1FFF3D5 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 471FC8CE36A1443E881F4ED8 /* Foundation.ttf */; };
@@ -152,7 +152,7 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = friedensflotte;
 		};
-		0745FA251F155472004F6A2E /* PBXContainerItemProxy */ = {
+		079E32041F15686900DFA403 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
@@ -376,16 +376,16 @@
 		00E356F21AD99517003FC87E /* friedensflotteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = friedensflotteTests.m; sourceTree = "<group>"; };
 		014A620444EB4CED9C72ABA2 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic.ttf"; path = "../node_modules/native-base/Fonts/Rubik-Italic.ttf"; sourceTree = "<group>"; };
 		067BD49E507C454ABB0B20AF /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../node_modules/native-base/Fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
-		0745FA201F155472004F6A2E /* friedensflotteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = friedensflotteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0745FA221F155472004F6A2E /* friedensflotteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friedensflotteUITests.swift; sourceTree = "<group>"; };
-		0745FA241F155472004F6A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0745FA4B1F1557E3004F6A2E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		076A18561EFC26530045FA93 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		077FB4F51F0039AF00F6B6CE /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMSessionFetcher.a; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/libGTMSessionFetcher.a"; sourceTree = "<group>"; };
 		078A851F1F0037830021DD52 /* DTPerformanceSession.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTPerformanceSession.framework; path = Library/Frameworks/DTPerformanceSession.framework; sourceTree = DEVELOPER_DIR; };
 		078D1FF91F003A5C006B94F0 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMSessionFetcher.a; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/libGTMSessionFetcher.a"; sourceTree = "<group>"; };
 		078D201D1F003BE3006B94F0 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMSessionFetcher.a; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/libGTMSessionFetcher.a"; sourceTree = "<group>"; };
 		078D20661F003ECF006B94F0 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMSessionFetcher.a; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/libGTMSessionFetcher.a"; sourceTree = "<group>"; };
+		079E31FF1F15686900DFA403 /* friedensflotteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = friedensflotteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		079E32011F15686900DFA403 /* friedensflotteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friedensflotteUITests.swift; sourceTree = "<group>"; };
+		079E32031F15686900DFA403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079E32091F156A0700DFA403 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../../fastlane/SnapshotHelper.swift; sourceTree = "<group>"; };
 		07E8FE391EBD156B00E90B5E /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMSessionFetcher.a; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/libGTMSessionFetcher.a"; sourceTree = "<group>"; };
 		08BE5EE91BFA475FB851F4AB /* Muli-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Muli-Bold.ttf"; path = "../app/fonts/Muli/Muli-Bold.ttf"; sourceTree = "<group>"; };
 		0B2FBCC4D14545D49ABD0811 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../node_modules/native-base/Fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
@@ -488,7 +488,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0745FA1D1F155472004F6A2E /* Frameworks */ = {
+		079E31FC1F15686800DFA403 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -606,12 +606,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0745FA211F155472004F6A2E /* friedensflotteUITests */ = {
+		079E32001F15686900DFA403 /* friedensflotteUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0745FA221F155472004F6A2E /* friedensflotteUITests.swift */,
-				0745FA4B1F1557E3004F6A2E /* SnapshotHelper.swift */,
-				0745FA241F155472004F6A2E /* Info.plist */,
+				079E32091F156A0700DFA403 /* SnapshotHelper.swift */,
+				079E32011F15686900DFA403 /* friedensflotteUITests.swift */,
+				079E32031F15686900DFA403 /* Info.plist */,
 			);
 			path = friedensflotteUITests;
 			sourceTree = "<group>";
@@ -786,7 +786,7 @@
 				13B07FAE1A68108700A75B9A /* friedensflotte */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* friedensflotteTests */,
-				0745FA211F155472004F6A2E /* friedensflotteUITests */,
+				079E32001F15686900DFA403 /* friedensflotteUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				7C71E87268F42F4006809BB9 /* Pods */,
 				547B188ED29B2A79BD479473 /* Frameworks */,
@@ -803,7 +803,7 @@
 				00E356EE1AD99517003FC87E /* friedensflotteTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* friedensflotte-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* friedensflotte-tvOSTests.xctest */,
-				0745FA201F155472004F6A2E /* friedensflotteUITests.xctest */,
+				079E31FF1F15686900DFA403 /* friedensflotteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -919,22 +919,22 @@
 			productReference = 00E356EE1AD99517003FC87E /* friedensflotteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0745FA1F1F155472004F6A2E /* friedensflotteUITests */ = {
+		079E31FE1F15686800DFA403 /* friedensflotteUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0745FA4A1F155472004F6A2E /* Build configuration list for PBXNativeTarget "friedensflotteUITests" */;
+			buildConfigurationList = 079E32061F15686900DFA403 /* Build configuration list for PBXNativeTarget "friedensflotteUITests" */;
 			buildPhases = (
-				0745FA1C1F155472004F6A2E /* Sources */,
-				0745FA1D1F155472004F6A2E /* Frameworks */,
-				0745FA1E1F155472004F6A2E /* Resources */,
+				079E31FB1F15686800DFA403 /* Sources */,
+				079E31FC1F15686800DFA403 /* Frameworks */,
+				079E31FD1F15686800DFA403 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0745FA261F155472004F6A2E /* PBXTargetDependency */,
+				079E32051F15686900DFA403 /* PBXTargetDependency */,
 			);
 			name = friedensflotteUITests;
 			productName = friedensflotteUITests;
-			productReference = 0745FA201F155472004F6A2E /* friedensflotteUITests.xctest */;
+			productReference = 079E31FF1F15686900DFA403 /* friedensflotteUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		13B07F861A680F5B00A75B9A /* friedensflotte */ = {
@@ -1010,9 +1010,9 @@
 						ProvisioningStyle = Manual;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
-					0745FA1F1F155472004F6A2E = {
+					079E31FE1F15686800DFA403 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
@@ -1126,7 +1126,7 @@
 				00E356ED1AD99517003FC87E /* friedensflotteTests */,
 				2D02E47A1E0B4A5D006451C7 /* friedensflotte-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* friedensflotte-tvOSTests */,
-				0745FA1F1F155472004F6A2E /* friedensflotteUITests */,
+				079E31FE1F15686800DFA403 /* friedensflotteUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1373,7 +1373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0745FA1E1F155472004F6A2E /* Resources */ = {
+		079E31FD1F15686800DFA403 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1551,12 +1551,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0745FA1C1F155472004F6A2E /* Sources */ = {
+		079E31FB1F15686800DFA403 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0745FA231F155472004F6A2E /* friedensflotteUITests.swift in Sources */,
-				0745FA4C1F1557E3004F6A2E /* SnapshotHelper.swift in Sources */,
+				079E32021F15686900DFA403 /* friedensflotteUITests.swift in Sources */,
+				079E320A1F156A0700DFA403 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1594,10 +1594,10 @@
 			target = 13B07F861A680F5B00A75B9A /* friedensflotte */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
-		0745FA261F155472004F6A2E /* PBXTargetDependency */ = {
+		079E32051F15686900DFA403 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* friedensflotte */;
-			targetProxy = 0745FA251F155472004F6A2E /* PBXContainerItemProxy */;
+			targetProxy = 079E32041F15686900DFA403 /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1709,7 +1709,7 @@
 			};
 			name = Release;
 		};
-		0745FA271F155472004F6A2E /* Debug */ = {
+		079E32071F15686900DFA403 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1719,13 +1719,15 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = friedensflotteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.friedensflotte.mimo.friedensflotteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "30f948dc-affa-420f-a89f-d44a434201aa";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1733,7 +1735,7 @@
 			};
 			name = Debug;
 		};
-		0745FA281F155472004F6A2E /* Release */ = {
+		079E32081F15686900DFA403 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1744,12 +1746,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = friedensflotteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.friedensflotte.mimo.friedensflotteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "30f948dc-affa-420f-a89f-d44a434201aa";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = friedensflotte;
@@ -2028,6 +2032,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -2072,6 +2077,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2101,13 +2107,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0745FA4A1F155472004F6A2E /* Build configuration list for PBXNativeTarget "friedensflotteUITests" */ = {
+		079E32061F15686900DFA403 /* Build configuration list for PBXNativeTarget "friedensflotteUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0745FA271F155472004F6A2E /* Debug */,
-				0745FA281F155472004F6A2E /* Release */,
+				079E32071F15686900DFA403 /* Debug */,
+				079E32081F15686900DFA403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "friedensflotte" */ = {
 			isa = XCConfigurationList;

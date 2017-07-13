@@ -44,6 +44,11 @@ fastlane screenshots
 fastlane test
 ```
 
+### frame
+```
+fastlane frame
+```
+
 
 ----
 

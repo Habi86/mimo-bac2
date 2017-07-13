@@ -46,3 +46,7 @@ end
 lane :test do
     scan(device: "iPhone 5s")
 end
+
+lane :frame do
+  frameit(white: true, path: './fastlane/screenshots')
+end
