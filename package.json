@@ -1,13 +1,12 @@
 {
   "name": "friedensflotte",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "private": true,
   "description": "application for friedensflotte mirno more salzburg",
   "author": {
-    "name": "Vera Karl",
-    "email": "vkarl.mmt-b2014@fh-salzburg.ac.at",
-    "url": "https://twitter.com/verakarl94"
+    "name": "Stefanie",
+    "email": "habi1986@gmx.at"
   },
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",

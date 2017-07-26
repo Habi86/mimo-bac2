@@ -37,11 +37,64 @@ class friedensflotteUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
       
+      let app = XCUIApplication()
       
-      XCUIApplication().otherElements[" E-Mail-Adresse E-Mail-Adresse   Passwort Passwort      ANMELDEN Passwort vergessen? Noch kein Profil? Jetzt registrieren?"].children(matching: .other).element(boundBy: 0).children(matching: .image).element.tap()
-      snapshot("01LoginScreen")
+      //If not logged in
+      if (app.otherElements["Button-Anmelden"].exists) {
+        XCUIApplication().tap()
+        snapshot("01LoginView")
+        
+        app.textFields["E-Mail-Adresse"].tap()
+        app.keys["t"].tap()
+        app.keys["e"].tap()
+        app.keys["s"].tap()
+        app.keys["t"].tap()
+        app.keys["e"].tap()
+        app.keys["r"].tap()
+        app.keys["@"].tap()
+        app.keys["g"].tap()
+        app.keys["m"].tap()
+        app.keys["x"].tap()
+        app.keys["."].tap()
+        app.keys["a"].tap()
+        app.keys["t"].tap()
+        app.buttons["Return"].tap()
+        app.otherElements["Passwort Passwort   "].tap()
+        app.keys["p"].tap()
+        app.keys["a"].tap()
+        app.keys["s"].tap()
+        app.keys["s"].tap()
+        app.keys["w"].tap()
+        app.keys["o"].tap()
+        app.keys["r"].tap()
+        app.keys["t"].tap()
+        app.buttons["Return"].tap()
+        
+        app.otherElements["Button-Anmelden"].tap()
+        sleep(10)
+      }
+      
+      sleep(10)
+      XCUIApplication().tap()
+      snapshot("02MyTripsView")
 
+      app.otherElements["ListOfTrips"].tap()
+      sleep(10)
+      snapshot("03TripDetailView")
       
+      app.otherElements["NewBooking"].tap()
+      sleep(10)
+      snapshot("04NewBooking")
+      
+//      app.otherElements["MainNavi"].tap()
+//      sleep(10)
+//      snapshot("05NewSailingTrip")
+      
+
     }
-    
 }
+
+
+
+
+

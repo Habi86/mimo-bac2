@@ -157,6 +157,7 @@ export default class SailingTrips extends Component {
           <View style={styles.card}>
             {(this.state.items.length != 0) ?
               <FlatList
+                testID = "ListOfTrips"
                 extraData={this.state.isEuro}
                 keyExtractor={(item, index) => item.tripID}
                 data={this.state.items}

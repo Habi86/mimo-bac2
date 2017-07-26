@@ -98,7 +98,7 @@ export default class MainNavigation extends Component {
     render() {
         return (
           <View style={styles.containerMain}>
-            <MainNavigator/>
+            <MainNavigator testID="MainNavi"/>
           </View>
         );
     }

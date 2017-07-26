@@ -16,37 +16,55 @@ default_platform :ios
 
 
 lane :beta do
-  # build your iOS app
-  #increment_build_number //error :/
-  # snapshot
+    increment_build_number(
+      xcodeproj: "ios/friedensflotte.xcodeproj"
+    )
   gym(
     scheme: "friedensflotte",
-    #project: 'ios/friedensflotte.xcodeproj',
     workspace: 'ios/friedensflotte.xcworkspace',
     export_method: "app-store"
   )
-  # upload to Testflight
-  pilot(skip_waiting_for_build_processing: true)
-
+  # upload to Testflight:
+  testflight(
+    username: "habi1986@gmx.at",
+    #jenkins braucht des:
+    team_id: "118550562",
+    team_name: "Stefanie Habersatter",
+    skip_waiting_for_build_processing: true
+  )
 end
 
 lane :screenshots do
   snapshot(
       workspace: 'ios/friedensflotte.xcworkspace',
       scheme: 'friedensflotte',
-      #languages: ['de-DE'],
-      devices: ["iPhone 6"],
+      languages: ['de-DE'],
+      devices: ["iPhone 6s Plus"],
   )
-  #frameit(white: true, path: './fastlane/screenshots')
-  #frameit(white: true)
-
+  frameit(white: true)
   #deliver
 end
 
-lane :test do
-    scan(device: "iPhone 5s")
+
+lane :build do
+  gym(
+    scheme: "friedensflotte",
+    workspace: 'ios/friedensflotte.xcworkspace',
+  )
 end
 
-lane :frame do
-  frameit(white: true, path: './fastlane/screenshots')
+
+lane :jenkins do
+  setup_jenkins(result_bundle: false)
+  gym(
+    scheme: "friedensflotte",
+    workspace: 'ios/friedensflotte.xcworkspace'
+  )
+end
+
+lane :archivBuild do
+ gym(
+  archive_path: "output/friedensflotte 2017-07-26 15.22.40.xcarchive"
+ )
+
 end

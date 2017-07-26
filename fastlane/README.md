@@ -39,14 +39,19 @@ fastlane beta
 fastlane screenshots
 ```
 
-### test
+### build
 ```
-fastlane test
+fastlane build
 ```
 
-### frame
+### jenkins
 ```
-fastlane frame
+fastlane jenkins
+```
+
+### archivBuild
+```
+fastlane archivBuild
 ```
 
 

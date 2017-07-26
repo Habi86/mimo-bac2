@@ -135,7 +135,7 @@ export default class Login extends Component {
                 <Text style={styles.error}>{this.state.errors}</Text>
                 <Text style={styles.error}>{this.state.resetPWsuccess}</Text>
               </View>
-              <View style={loginstyles.centerButton}>
+              <View style={loginstyles.centerButton} testID="Button-Anmelden">
                 <Button
                   transparent={true} onPress={()=> this.handleLoginButtonPress()}
                   title="ANMELDEN"

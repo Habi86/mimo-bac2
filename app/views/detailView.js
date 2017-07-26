@@ -378,7 +378,7 @@ export default class DetailView extends Component {
             {/*New booking:*/}
             {this.state.status === "AKTIV"
               ?
-              <TouchableOpacity
+              <TouchableOpacity testID = "NewBooking"
                 onPress={() => navigate('NewBooking', {tripID: this.state.tripID})}>
                 <View style={detailView.tableNewBooking}>
                   <Text style={detailView.tableNewBookingText}>+ Neues Ereignis hinzufügen</Text>

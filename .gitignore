@@ -55,3 +55,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/friedensflotte.app.dSYM.zip
+
+#Jenkins
+output/
+derivedData
