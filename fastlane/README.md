@@ -29,9 +29,19 @@ xcode-select --install
 </table>
 
 # Available Actions
+### jenkins
+```
+fastlane jenkins
+```
+
 ### beta
 ```
 fastlane beta
+```
+
+### deliverDONTEXECUTE
+```
+fastlane deliverDONTEXECUTE
 ```
 
 ### screenshots
@@ -39,14 +49,9 @@ fastlane beta
 fastlane screenshots
 ```
 
-### build
+### framedScreenshots
 ```
-fastlane build
-```
-
-### jenkins
-```
-fastlane jenkins
+fastlane framedScreenshots
 ```
 
 ### archivBuild

@@ -15,6 +15,14 @@ default_platform :ios
 # info which you can add here later
 
 
+lane :jenkins do
+  setup_jenkins(result_bundle: false)
+  gym(
+    scheme: "friedensflotte",
+    workspace: 'ios/friedensflotte.xcworkspace'
+  )
+end
+
 lane :beta do
     increment_build_number(
       xcodeproj: "ios/friedensflotte.xcodeproj"
@@ -24,7 +32,6 @@ lane :beta do
     workspace: 'ios/friedensflotte.xcworkspace',
     export_method: "app-store"
   )
-  # upload to Testflight:
   testflight(
     username: "habi1986@gmx.at",
     #jenkins braucht des:
@@ -34,33 +41,54 @@ lane :beta do
   )
 end
 
+lane :deliverDONTEXECUTE do
+    #versionsnummer incrementen oder?
+    increment_build_number(
+      xcodeproj: "ios/friedensflotte.xcodeproj"
+    )
+  gym(
+    scheme: "friedensflotte",
+    workspace: 'ios/friedensflotte.xcworkspace',
+    export_method: "app-store"
+  )
+  # upload to Testflight - brauch ma ned - aba braucht jenkins de daten XD?:
+  testflight(
+    username: "habi1986@gmx.at",
+    #jenkins braucht des:
+    team_id: "118550562",
+    team_name: "Stefanie Habersatter",
+    skip_waiting_for_build_processing: true
+  )
+  deliver # nur deliver? nix gym ? increment versions nummer?
+end
+
+
 lane :screenshots do
   snapshot(
       workspace: 'ios/friedensflotte.xcworkspace',
       scheme: 'friedensflotte',
       languages: ['de-DE'],
-      devices: ["iPhone 6s Plus"],
+      devices: ["iPhone 6"],
+  )
+end
+
+
+lane :framedScreenshots do
+  snapshot(
+      workspace: 'ios/friedensflotte.xcworkspace',
+      scheme: 'friedensflotte',
+      languages: ['de-DE'],
+      devices: ["iPhone 6"],
   )
   frameit(white: true)
   #deliver
 end
 
 
-lane :build do
-  gym(
-    scheme: "friedensflotte",
-    workspace: 'ios/friedensflotte.xcworkspace',
-  )
-end
 
 
-lane :jenkins do
-  setup_jenkins(result_bundle: false)
-  gym(
-    scheme: "friedensflotte",
-    workspace: 'ios/friedensflotte.xcworkspace'
-  )
-end
+
+
 
 lane :archivBuild do
  gym(

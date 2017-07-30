@@ -386,6 +386,8 @@
 		079E32011F15686900DFA403 /* friedensflotteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friedensflotteUITests.swift; sourceTree = "<group>"; };
 		079E32031F15686900DFA403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079E32091F156A0700DFA403 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../../fastlane/SnapshotHelper.swift; sourceTree = "<group>"; };
+		07A9CB9F1F2E30CB00D2F1DC /* de-AT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "de-AT"; path = "de-AT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		07A9CBC11F2E30DE00D2F1DC /* de-DE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "de-DE"; path = "de-DE.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		07E8FE391EBD156B00E90B5E /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMSessionFetcher.a; path = "Pods/../build/Debug-iphoneos/GTMSessionFetcher/libGTMSessionFetcher.a"; sourceTree = "<group>"; };
 		08BE5EE91BFA475FB851F4AB /* Muli-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Muli-Bold.ttf"; path = "../app/fonts/Muli/Muli-Bold.ttf"; sourceTree = "<group>"; };
 		0B2FBCC4D14545D49ABD0811 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../node_modules/native-base/Fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
@@ -1612,6 +1614,8 @@
 			children = (
 				13B07FB21A68108700A75B9A /* Base */,
 				076A18561EFC26530045FA93 /* de */,
+				07A9CB9F1F2E30CB00D2F1DC /* de-AT */,
+				07A9CBC11F2E30DE00D2F1DC /* de-DE */,
 			);
 			name = LaunchScreen.xib;
 			path = friedensflotte;
