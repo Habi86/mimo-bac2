@@ -18,6 +18,7 @@ import Config from 'friedensflotte/app/config/config';
 
 /* ------------ External Components --------- */
 import { StackNavigator } from 'react-navigation';
+import codePush from "react-native-code-push";
 
 export default class Index extends Component {
 
@@ -63,5 +64,7 @@ const LoginNavigator = StackNavigator({
     headerMode: 'none',
     navigationOptions:{ header:{visible:false}}
   });
+
+Index = codePush(Index);
 
 AppRegistry.registerComponent("friedensflotte", () => LoginNavigator);
