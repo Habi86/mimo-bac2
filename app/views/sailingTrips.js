@@ -155,7 +155,7 @@ export default class SailingTrips extends Component {
         />
         <ScrollView>
           <View style={styles.card}>
-            {(this.state.items.length != 0) ?
+            {(this.state.items.length !== 0) ?
               <FlatList
                 testID = "ListOfTrips"
                 extraData={this.state.isEuro}
@@ -294,7 +294,6 @@ export default class SailingTrips extends Component {
     return (
       <Swipeout left={swipeoutBtnClose} right={swipeoutBtnDelete} autoClose={true}
                 style={{backgroundColor: Config.colors.primaryColorText, marginBottom: 10,}}>
-        {/*<CustomModal content={contentSwipeDelete} ref={'contentSwipeDelete'}/>*/}
         <TouchableOpacity
           onPress={() => navigate('DetailView', {tripID: item.tripID, title: item.data.title})}>
           <Card style={{

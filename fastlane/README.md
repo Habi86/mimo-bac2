@@ -29,11 +29,6 @@ xcode-select --install
 </table>
 
 # Available Actions
-### jenkins
-```
-fastlane jenkins
-```
-
 ### beta
 ```
 fastlane beta
