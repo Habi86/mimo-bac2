@@ -11,7 +11,7 @@ import styles from 'friedensflotte/app/styles/style';
 /* ------------ Selfbuilt Components --------- */
 import Login from 'friedensflotte/app/views/login';
 import Registration from 'friedensflotte/app/views/registration';
-import MainNavigation from 'friedensflotte/app/views/mainNavigation'
+import MainNavigation from 'friedensflotte/app/views/mainNavigation';
 import Firebase from 'friedensflotte/app/components/firebase';
 import Config from 'friedensflotte/app/config/config';
 //import DetailView from 'friedensflotte/app/views/detailview';
@@ -31,6 +31,15 @@ export default class Index extends Component {
 
   //check if user is logged when app starts
   componentDidMount() {
+    
+    //CodePush
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
+    });
+    
+    
+    
     const { navigate, goBack } = this.props.navigation;
     this.unsubscribe = Firebase.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -65,6 +74,5 @@ const LoginNavigator = StackNavigator({
     navigationOptions:{ header:{visible:false}}
   });
 
-Index = codePush(Index);
 
 AppRegistry.registerComponent("friedensflotte", () => LoginNavigator);

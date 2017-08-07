@@ -15,6 +15,8 @@
 
 #import <Firebase.h>
 
+#import <CodePush/CodePush.h>
+
 
 
 @implementation AppDelegate
@@ -23,13 +25,13 @@
 {
   NSURL *jsCodeLocation;
 
-  //
 #ifdef DEBUG
-    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 #else
-    jsCodeLocation = [CodePush bundleURL];
+  jsCodeLocation = [CodePush bundleURL];
 #endif
-  jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=false"];
+  
+//  jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=false"];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"friedensflotte"
