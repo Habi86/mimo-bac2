@@ -15,6 +15,11 @@ default_platform :ios
 # info which you can add here later
 
 
+lane :GITTriggered do
+  setup_jenkins(result_bundle: false)
+end
+
+
 lane :beta do
   increment_build_number(
     xcodeproj: "ios/friedensflotte.xcodeproj"
