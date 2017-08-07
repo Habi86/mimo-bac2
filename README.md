@@ -25,4 +25,4 @@ $ react-native run-android
 $ react-native run-ios
 ```
 
-## Jenkins Webhook test commit die ...
+## Jenkins Webhook test :)
