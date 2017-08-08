@@ -141,7 +141,7 @@ export default class SailingTrips extends Component {
     return (
       <View style={{backgroundColor: Config.colors.mainBackgroundColor, height: Dimensions.get('window').height}}>
         <TopNavigation
-          title={'Meine Törns'}
+          title={'Meine Törnsasdfasdf'}
           rightButton={
             (Platform.OS === 'ios') ? <TouchableOpacity style={SailingTrip.iconsRight}
                                                         onPress={() => this.state.isEuro ? this.setState({isEuro: false}) : this.setState({isEuro: true})}>
